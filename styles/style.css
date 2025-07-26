@@ -20,7 +20,7 @@ body {
 }
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 section {
@@ -126,6 +126,41 @@ section {
   line-height: 1.6;
   padding: 0;
 }
+.grid-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 60px;
+}
+.card {
+  background-color: #F5F8FF;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: rgb(17, 17, 17);
+}
+.price {
+  color: black;
+  margin: 16px 0px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.btn {
+  background-color: #e67e22;
+  border: none;
+  color: #FFFFFF;
+  padding: 10px 16px;
+  font-size: 16px;
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   .content {
     margin-top: 30px;
@@ -187,5 +222,13 @@ section {
   }
   .description {
     font-size: 14px;
+  }
+  .grid-item {
+    padding: 0 12px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .card h3, .price{
+    font-size: 16px;
   }
 }
