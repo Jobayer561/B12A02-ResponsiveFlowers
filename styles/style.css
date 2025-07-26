@@ -202,6 +202,79 @@ section {
   font-size: 21px;
   font-weight: 400;
 } 
+.latest-deals {
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+.latest-deals h1 {
+  font-size: 45px;
+  margin-bottom: 16px;
+  font-weight: 600;
+
+}
+.latest-deals p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.three-images {
+  display: flex;
+  gap: 20px;
+}
+
+.two-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 35%; 
+}
+
+.one-image {
+  width: 65%; 
+}
+.images{
+  position: relative;
+  overflow:hidden;
+  border-radius: 10px;
+}
+.images.large{
+  height: 100%;
+  justify-content: center;
+  display: flex;
+}
+.images img{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.Information{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.Information h3{
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+.Information a{
+  font-size: 20px;
+  color:white;
+  margin-top: 5px;
+}
 @media screen and (max-width: 768px) {
   .content {
     margin-top: 30px;
@@ -295,5 +368,18 @@ section {
   .lover ul li {
     font-size: 14px;
     margin-right: 5px;
+  }
+    .three-images{
+    margin:15px;
+    flex-direction: column;
+  }
+  .two-images, .one-image{
+    width: 100%;
+  }
+  .Information h3{
+    font-size: 20px;
+  }
+  .Information a{
+    font-size: 16px;
   }
 }
